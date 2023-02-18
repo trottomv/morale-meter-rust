@@ -1,8 +1,8 @@
 [package]
-authors = ["Matteo Vitali <matteo@20tab.com>"]
+authors = ["Matteo Vitali <trottomv@gmail.com>"]
 edition = "2021"
 name = "morale-meter"
-rust-version = "1.69"
+rust-version = "1.67"
 version = "0.0.1"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
