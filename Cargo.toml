@@ -1,0 +1,18 @@
+[package]
+authors = ["Matteo Vitali <trottomv@gmail.com>"]
+edition = "2021"
+name = "morale-meter"
+rust-version = "1.67"
+version = "0.0.1"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+env_logger = "0.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+futures = "0.3"
+
+[dev-dependencies]
+cargo-audit = "0.17"
