@@ -9,6 +9,10 @@ check:  ## Check app configuration
 fix:  ## Fix formatting and linting
 	cargo fmt
 
+.PHONY: precommit
+precommit:  ## Fix code formatting and linting
+	pre-commit run --all-files
+
 .PHONY: help
 help:
 	@echo "[Help] Makefile list commands:"
