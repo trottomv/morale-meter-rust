@@ -1,9 +1,4 @@
-use actix_web::{
-    middleware,
-    web,
-    App,
-    HttpServer
-};
+use actix_web::{middleware, web, App, HttpServer};
 mod api;
 mod index;
 
@@ -17,10 +12,9 @@ async fn main() -> std::io::Result<()> {
             .service(web::resource("/").to(index::root))
             .service(
                 web::scope("/api/v1")
-                .service(web::resource("").to(index::api_root))
-                .service(web::resource("/surveys").to(api::surveys_list))
+                    .service(web::resource("").to(index::api_root))
+                    .service(web::resource("/surveys").to(api::surveys_list)),
             )
-
     })
     .bind(("127.0.0.1", 8000))?
     .run()
